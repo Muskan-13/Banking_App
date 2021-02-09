@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/amount_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Rs.5000"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:fontFamily="@font/comfortaa"
+        app:layout_constraintStart_toStartOf="@+id/amount_tv"
+        app:layout_constraintTop_toBottomOf="@+id/amount_tv"
+        tools:text="Muskan Goel" />
+
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="42dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sender"
+        app:layout_constraintStart_toEndOf="@+id/sender"
+        app:layout_constraintTop_toTopOf="@+id/sender"
+        android:src="@drawable/right" />
+
+    <TextView
+        android:id="@+id/receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:fontFamily="@font/comfortaa"
+        app:layout_constraintBottom_toBottomOf="@+id/right"
+        app:layout_constraintStart_toEndOf="@+id/right"
+        app:layout_constraintTop_toTopOf="@+id/right"
+        tools:text="Saakshi Agarwal" />
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/sender"
+        app:layout_constraintTop_toBottomOf="@+id/sender"
+        tools:text="22 Feb 2020 8:30 am" />
+
+    <View
+        android:id="@+id/dividor"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="#1C31AA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_tv" />
+
+    <TextView
+        android:id="@+id/success_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/chivo"
+        android:text="Success"
+        android:textColor="#1C31AA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/amount_tv" />
+</androidx.constraintlayout.widget.ConstraintLayout>
